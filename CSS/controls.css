@@ -1,0 +1,44 @@
+@import url(style.css);
+
+#controls {
+    margin-top: 1.6rem; 
+    gap: 1.6rem;
+    padding: 2.2rem 4rem;
+   
+    background-color: var(--controls-bg-color);
+    border-radius: 999rem;
+   
+   
+   }
+
+   #controls button {
+     background: none;
+     border: none;
+     cursor: pointer;
+     
+     color: var(--primary-color);
+     font-size: 6.4rem;
+   }
+   
+   #controls .secondary {
+    /*tem a função de fazer que os botões desejados fiquem com a cor branca*/
+   color: var(--button-secondary);
+   }
+   
+   /*controlls*/
+
+    /*quando estiver rodando suma com play*/
+    .running .ph-play-circle,
+    /*quando estiver rodando suma com timer*/
+    .running .ph-timer,
+    /*quando estiver com musicON suma com botão de dar play na musica*/
+    .music-on .ph-speaker-none,
+    /*quando não estiver rodando suma com o botão de pause*/
+    html:not(.running) .ph-pause-circle,
+    /*quando não estiver rodando suma com botão de stop*/
+    html:not(.running) .ph-stop-circle,
+    /*quando não estiver com musica suma com botão de parar musica*/
+    html:not(.music-on) .ph-speaker-high{
+    display: none;
+   }
+   
